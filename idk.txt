@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head><title>REFLECTION</title>
+<style>
+.caught {
+            background-color: #C27206;
+            color: white;
+            border: 2px solid #8A4B08;
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            user-select: none;
+}
+
+.text{
+background-color:lightblue;
+border-style:dotted;
+}
+
+body {
+            background-image: url('wob.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+</style>
+<script type="text/javascript">
+var userInput = "";
+while (userInput==="")
+{
+	userInput = prompt("What did I learn from this quarter?):");
+	if (userInput==="")
+{ 
+alert("Answer cannot be empty. Please try again.");
+}
+}
+
+function playHurtSound() {
+            document.getElementById("hurt-audio").play();
+        }
+
+ function goBack() {
+            window.location.href = "pokemon.html";
+        }
+
+</script>
+</head>
+<body>
+<h1 align="center">REFLECTION</h1>
+<p class="text"> This quarter on the 3rd quarter were about JavaScript. JavaScript is an easy and fast way to make your website more dynamic. This very website was made with JavaScript. It makes it really easy to add lots of fun interactions and events in your webpage. This quarter we learned about statements such as the IF-ELSE statement or the SWITCH statement. It was hard at first but overtime I got to understand how JavaScript works and was able to utilize it properly and efficiently. </p>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="caught" onmouseover="playHurtSound()" onclick="goBack()"><p align="left"> Head Back? (click anywhere on the page to play a sound when you haver over the pokeball)</p><img src="pokeball.png" alt="pokeball" height="150px" width="150px"></div>
+    <audio id="hurt-audio" src="pokeball.mp3"></audio>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ACTIVITIES</title>
+ <style>
+        body {
+            background-image: url('anime.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+	.run-away {
+            background-color: #C27206;
+            color: white;
+            border: 2px solid #8A4B08;
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            user-select: none;
+        }
+ </style>
+</head>
+<body>
+<h1 align="center">
+<b>Activities during 4th Quarter</b>
+</h1>
+<script language="javascript">
+var gng;
+gng="<table width='400' border='1' cellspacing='0' cellpadding='3' align='center' style='background-color: #C27206;'>";
+
+gng=gng+"<tr>";
+gng=gng+"<th colspan='4'>My Memories</th>";
+gng=gng+"</tr>";
+
+gng=gng+"<tr>";
+gng=gng+"<th>4TH QUARTER</th>";
+gng=gng+"<th>PICTURES AND VIDS</th>";
+gng=gng+"<th>4TH QUARTER</th>";
+gng=gng+"<th>PICTURES AND VIDS</th>";
+gng=gng+"</tr>";
+
+gng=gng+"<tr align='center'>";
+gng=gng+"<td>One Act Play</td>";
+gng=gng+"<td><img src='O.A.P.png' alt='One Act Play poster' height='150px' width='150px'></td>";
+gng=gng+"<td>Streetdance</td>";
+gng=gng+"<td><img src='STREETDANCE.jpeg' alt='One Act Play poster' height='150px' width='150px'></td>";
+gng=gng+"</tr>";
+
+gng=gng+"<tr align='center'>";
+gng=gng+"<td>Art Fair</td>";
+gng=gng+"<td><img src='ART FAIR.jpg' alt='One Act Play poster' height='150px' width='150px'></td>";
+gng=gng+"<td>BOTB</td>";
+gng=gng+"<td><img src='BOTB.jpeg' alt='One Act Play poster' height='150px' width='150px'></td>";
+gng=gng+"</tr>";
+
+gng=gng+"<tr align='center'>";
+gng=gng+"<td>Zumba</td>";
+gng=gng+"<td><video width='300' height='200' controls autoplay><source src='ZUMBA.mp4' type='video/mp4'></video></td>";
+gng=gng+"<td>Miting de Avance</td>";
+gng=gng+"<td><img src='ELECTION.jpg' alt='One Act Play poster' height='150px' width='150px'></td>";
+gng=gng+"</tr>";
+
+gng=gng+"</table>";
+
+document.write(gng);
+
+function playHurtSound() {
+            document.getElementById("hurt-audio").play();
+        }
+
+ function goBack() {
+            window.location.href = "pokemon.html";
+        }
+</script>
+<div class="run-away" onmouseover="playHurtSound()" onclick="goBack()">Run Away</div>
+    <audio id="hurt-audio" src="hurt.mp3"></audio>
+</body>
+</html>

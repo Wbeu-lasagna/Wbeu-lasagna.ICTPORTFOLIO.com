@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4TH QUARTER</title>
+    <style>
+           body {
+            background-image: url('plains.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+          .navbar {
+            width: 100%;
+            background-color: #C27206;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 3px solid #8A4B08;
+            cursor: pointer;
+            user-select: none;
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 60px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .menu a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 15px;
+            width: 200px;
+        }
+        .activity { 
+	background-color: #F12B1E; border: 3px solid #F12B1E; 
+	}
+        .reflection { 
+	background-color: #97F11E; border: 3px solid #97F11E; 
+	}
+        .sample-codes { 
+	background-color: #EFEC16; border: 3px solid #EFEC16;
+ 	}
+        .navbar:hover + .menu, .menu:hover {
+            display: flex;
+        }
+	#squirtle {
+	    position: absolute;
+            bottom: 25%;
+            right: 20%;
+	}
+	#charizard {
+	    position: absolute;
+            bottom: 15%;
+            right: 75%;
+	}
+	#ivy {
+	    position: absolute;
+            bottom: 15%;
+            right: 50%;
+	}
+	#text {
+	    position: absolute;
+            bottom: 40%;
+            right: 20%;
+	}
+    </style>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            const audio = document.getElementById("bg-audio");
+            const playAudio = () => {
+                audio.play().catch(error => console.log("Autoplay prevented: ", error));
+                document.removeEventListener("click", playAudio);
+            };
+            document.addEventListener("click", playAudio);
+            alert("You've encountered a Portfoliomon!");
+        });
+    </script>
+</head>
+<body>
+    <div class="navbar">What will you do next</div>
+    <div class="menu">
+        <a href="fight.html" class="activity">ACTIVITIES</a>
+        <a href="idk.html" class="reflection">REFLECTION</a>
+        <a href="b4.html" class="sample-codes">SAMPLE CODES</a>
+    </div>
+    <audio id="bg-audio" src="fight.mp3"></audio>
+    <p id="text"> Click Me! </p>
+    <img id="squirtle" src="squirtle.png" alt="squirtle" height="200px" width="200px">
+     <img  id="charizard" src="charizard.png" alt="kelp juice" height="400px" width="400px">
+     <img  id="ivy" src="ivysaur.png" alt="krabby patty" height="200px" width="200px">
+</body>
+</html>

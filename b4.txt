@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head><title>SAMPLE</title>
+    <style>
+        body {
+            background-image: url('rock.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .lessons {
+            display: flex;
+            gap: 20px;
+        }
+        .section {
+            background-color: #D58106;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+		color:white;
+        }
+	.section img {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1 class="section" >SAMPLE CODES</h1>
+    <div class="lessons">
+        <div class="section">
+            <img src="lesson1.jpg" alt="Image 1">
+            <img src="lesson2.jpg" alt="Image 2">
+        </div>
+        <div class="section">
+            <img src="lesson3.jpg" alt="Image 3">
+            <img src="3.jpg" alt="Image 4">
+        </div>
+    </div>
+<h1><a href="pokemon.html" class="section" >Head Back?</a></h1>
+</head>
+<body>
+</body>
+</html>

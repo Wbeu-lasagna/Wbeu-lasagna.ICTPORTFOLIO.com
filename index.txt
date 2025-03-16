@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head><title> Welcome</title>
+<style>
+
+.this {
+font-family:Arial;
+text-align:center;
+}
+
+.woah{
+border-style:dotted;
+text-align:center;
+}
+
+a:link{
+color:red;
+}
+
+a:visited{
+color:green;
+}
+
+a:hover{
+color:yellow;
+}
+
+#movingText {
+    position: absolute;
+    cursor: pointer;
+}
+</style>
+</head>
+<body style="background-color:lightblue;">
+<h1 align="center" class="this" > Welcome to the Port</h1>
+<h2 class="this"> Where you can find all of Eli's portfolios for Grade 9 </h2>
+<hr size="3px">
+<div class="woah">
+<p class="this"> <b>1st Quarter</b> </p>
+<p align="center"> <a href="log.html">Press this for 1st Quarter Portfolio </a> </p>
+</div>
+<br>
+<div class="woah">
+<p class="this"> <b>2nd Quarter</b> </p>
+<p align="center"> <a href="2ndQtrPortfolio_Discipulo.html">Press this for 2nd Quarter Portfolio </a> </p>
+</div>
+<br>
+<div class="woah">
+<p class="this"> <b>4th Quarter</b> </p>
+<p align="center"> <a href="pokemon.html">Press this for 4th Quarter Portfolio </a> </p>
+</div>
+
+<div id="movingText"><p class="this"> <b>3rd Quarter</b> </p>
+<p align="center"> <a href="you.html">Press this for 3rd Quarter Portfolio </a> </p></div>
+
+<script>
+    const text = document.getElementById('movingText');
+    
+    text.addEventListener('mouseenter', () => {
+        const x = Math.random() * (window.innerWidth - text.clientWidth);
+        const y = Math.random() * (window.innerHeight - text.clientHeight);
+        text.style.transform = `translate(${x}px, ${y}px)`;
+    });
+</script>
+</body>
+</html>
